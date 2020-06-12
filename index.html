@@ -695,15 +695,20 @@
                         paypal.Buttons({
 
                             // Set up the transaction
-                            createOrder: function(data, actions) {
-                                return actions.order.create({
-                                    purchase_units: [{
-                                        amount: {
-                                            value: '150.00'
-                                        }
-                                    }]
-                                });
-                            },
+                                createOrder: function(data, actions) {
+                return actions.order.create({
+                    purchase_units: [{
+                        amount: {
+                            value: '50'
+                        },
+                        description: 'Single consultation'
+                    }],
+                    application_context:{
+                      shipping_preference:'NO_SHIPPING'
+                    }
+
+                });
+            },
 
                             // Finalize the transaction
                             onApprove: function(data, actions) {
@@ -719,15 +724,20 @@
                         paypal.Buttons({
 
                             // Set up the transaction
-                            createOrder: function(data, actions) {
-                                return actions.order.create({
-                                    purchase_units: [{
-                                        amount: {
-                                            value: '50.00'
-                                        }
-                                    }]
-                                });
-                            },
+                               createOrder: function(data, actions) {
+                return actions.order.create({
+                    purchase_units: [{
+                        amount: {
+                            value: '150'
+                        },
+                        description: 'Therapy - Five Consecutive Sessions'
+                    }],
+                    application_context:{
+                      shipping_preference:'NO_SHIPPING'
+                    }
+
+                });
+            },
 
                             // Finalize the transaction
                             onApprove: function(data, actions) {
