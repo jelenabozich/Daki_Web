@@ -39,7 +39,7 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #000;
+  color: #777777;
   font-family: "Source Sans Pro", Arial, sans-serif;
   font-weight: 400;
 }
@@ -78,6 +78,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   #fh5co-header .navbar-brand {
     color: #6173f4 !important;
+    color: #fff !important;
   }
   #fh5co-header #navbar li a {
     color: rgba(0, 0, 0, 0.5) !important;
@@ -87,6 +88,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   #fh5co-header #navbar li a:hover {
     color: #6173f4 !important;
+    color: #fff !important;
   }
   #fh5co-header #navbar li a span:before {
     background: transparent !important;
@@ -297,12 +299,12 @@ h1, h2, h3, h4, h5, h6 {
     padding: 5em 0;
   }
 }
-
+/*ovde menjas My Story*/
 #fh5co-testimonials {
-  background: #153e55;
+  background: #f4f4f4;
 }
 #fh5co-testimonials .section-heading h2 {
-  color: white;
+  color: #444;
 }
 #fh5co-testimonials .section-heading h2:after {
   background: rgba(255, 255, 255, 0.2);
@@ -1048,6 +1050,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
 }
+/*ovde menjas font size i ostalo za naslova u karuselu*/
 .owl-carousel-fullwidth .item .fh5co-owl-text .fh5co-lead {
   font-weight: 700;
   margin-bottom: 20px;
@@ -1055,7 +1058,7 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   letter-spacing: 1px;
   color: #fff;
-  font-size: 50px;
+  font-size: 35px;
   line-height: 50px;
   color: #fff;
 }
@@ -1066,8 +1069,9 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 30px;
   }
 }
+/*ovde menjas ext inspod naslova u karuselu*/
 .owl-carousel-fullwidth .item .fh5co-owl-text .fh5co-sub-lead {
-  font-size: 30px;
+  font-size: 25px;
   line-height: 30px;
   line-height: 42px;
   font-weight: 100;
