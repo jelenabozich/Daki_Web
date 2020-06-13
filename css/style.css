@@ -588,7 +588,7 @@ h1, h2, h3, h4, h5, h6 {
   #fh5co-press .fh5co-press-item .fh5co-press-img {
     height: inherit;
     float: none !important;
-    width: 100%;
+    width: 50%;
     display: block !important;
   }
 }
@@ -625,7 +625,7 @@ h1, h2, h3, h4, h5, h6 {
     left: 0;
     top: 0;
     position: relative;
-    width: 100%;
+    width: 50%;
   }
 }
 
