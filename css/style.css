@@ -383,6 +383,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #fh5co-pricing .price-box {
   border: 2px solid #a2b0be;
+    background: #f4f4f4;
   text-align: center;
   padding: 30px;
   -webkit-border-radius: 5px;
