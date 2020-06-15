@@ -88,7 +88,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   #fh5co-header #navbar li a:hover {
     color: #5585b5 !important;
-    color: #fff !important;
+    color: #777777 !important;
   }
   #fh5co-header #navbar li a span:before {
     background: transparent !important;
@@ -652,7 +652,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 25px;
   height: 3px;
   color: #5585b5;
-  font: bold 14px/.4 Helvetica;
+  font: bold 14px/.4 "Source Sans Pro", Arial, sans-serif;
   text-transform: uppercase;
   text-indent: -55px;
   background: #5585b5;
@@ -1053,7 +1053,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 /*ovde menjas font size i ostalo za naslova u karuselu*/
 .owl-carousel-fullwidth .item .fh5co-owl-text .fh5co-lead {
-  font-weight: 700;
+  font-weight: 300;
   margin-bottom: 20px;
   margin-top: 0;
   text-transform: uppercase;
