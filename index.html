@@ -66,7 +66,7 @@
                         <li><a href="#" data-nav-section="features"><span>Therapy</span></a></li>
                         <li><a href="#" data-nav-section="testimonials"><span>My Story</span></a></li>
                         <li><a href="#" data-nav-section="pricing"><span>Pricing</span></a></li>
-                        <li><a href="#" data-nav-section="press"><span>Press</span></a></li>
+                        <li><a href="#" data-nav-section="press"><span>Book Appointment</span></a></li>
                     </h4>
                 </div>
             </nav>
@@ -463,81 +463,39 @@
 
 
     <div id="fh5co-press" data-section="press">
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
-                <div class="col-md-12 section-heading text-center">
-                    <h2 class="single-animate animate-press-1">Press Releases</h2>
+                <div class="col-md-8 col-md-offset-2 section-heading text-center">
+                    <h2 class="single-animate animate-press-1">Book Now</h2>
+                </div>
                     <div class="row">
-                        <div class="col-md-8 col-md-offset-2 subtext single-animate animate-press-2">
-                            <h3>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</h3>
-                        </div>
+
+                        <div class="col-md-8 col-md-offset-2">
+            <form action="https://httppostsendmail20200614204433.azurewebsites.net/api/SendMail" method="post" >
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="email" >
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password" >
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1" name="checkbox" >
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+
+      </div>
+
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <!-- Press Item -->
-                    <div class="fh5co-press-item to-animate">
-                        <!--<div class="fh5co-press-img" style="background-image: url(images/img_7.jpg)">
 
-                        </div>-->
-                        <!--                         <div class="price-box to-animate">
-
-                        </div>-->
-
-                        <div class="fh5co-press-text">
-                            <h3 class="h2 fh5co-press-title">Single Consultation <span class="fh5co-border"></span></h3>
-                            <p><sup>€</sup>50.00 </p>
-                            <p>Single session with the therapist. Usually lasting anywhere between 1h and 1h and 30min</p>
-                            <!--<p><a href="#" class="btn btn-primary btn-sm">Learn more</a></p>-->
-                        </div>
-                    </div>
-                    <!-- Press Item -->
-                </div>
-
-                <div class="col-md-6">
-                    <!-- Press Item -->
-                    <div class="fh5co-press-item to-animate">
-
-                        <div class="fh5co-press-text">
-                            <h3 class="h2 fh5co-press-title">Versatile <span class="fh5co-border"></span></h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis eius quos similique suscipit dolorem cumque vitae qui molestias illo accusantium...</p>
-                            <p><a href="#" class="btn btn-primary btn-sm">Learn more</a></p>
-                        </div>
-                    </div>
-                    <!-- Press Item -->
-                </div>
-
-                <div class="col-md-6">
-                    <!-- Press Item -->
-                    <div class="fh5co-press-item to-animate">
-                        <div class="fh5co-press-img" style="background-image: url(images/img_9.jpg);">
-                        </div>
-                        <div class="fh5co-press-text">
-                            <h3 class="h2 fh5co-press-title">Aesthetic <span class="fh5co-border"></span></h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis eius quos similique suscipit dolorem cumque vitae qui molestias illo accusantium...</p>
-                            <p><a href="#" class="btn btn-primary btn-sm">Learn more</a></p>
-                        </div>
-                    </div>
-                    <!-- Press Item -->
-                </div>
-
-                <div class="col-md-6">
-                    <!-- Press Item -->
-                    <div class="fh5co-press-item to-animate">
-                        <div class="fh5co-press-img" style="background-image: url(images/img_10.jpg);">
-                        </div>
-                        <div class="fh5co-press-text">
-                            <h3 class="h2 fh5co-press-title">Creative <span class="fh5co-border"></span></h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis eius quos similique suscipit dolorem cumque vitae qui molestias illo accusantium...</p>
-                            <p><a href="#" class="btn btn-primary btn-sm">Learn more</a></p>
-                        </div>
-                    </div>
-                    <!-- Press Item -->
-                </div>
-            </div>
         </div>
-    </div>
+
 
 
     <footer id="footer" role="contentinfo">
