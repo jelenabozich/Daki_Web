@@ -23,6 +23,12 @@ body {
   position: relative;
 }
 
+html {
+    height:100%;
+}
+body {
+    min-height:100%;
+}
 a {
   color: #5585b5;
   -webkit-transition: 0.5s;
