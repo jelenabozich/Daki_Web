@@ -64,7 +64,7 @@
                         <li><a href="#" data-nav-section="features"><span>Therapy</span></a></li>
                         <li><a href="#" data-nav-section="testimonials"><span>My Story</span></a></li>
                         <li><a href="#" data-nav-section="pricing"><span>Pricing</span></a></li>
-                        <li><a href="#" data-nav-section="press"><span>Book Now</span></a></li>
+                        <li><a href="#" data-nav-section="press"><span>Contact Us</span></a></li>
                     </h4>
                 </div>
             </nav>
@@ -459,53 +459,8 @@
         </div>
     </div>
 
-    <!-- START OF Book Now Form ---------------------------------------------------------------------------->
-    <div id="fh5co-press" data-section="press">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 section-heading text-center">
-                    <h2 class="single-animate animate-pricing-1">Book Now</h2>
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2 subtext single-animate animate-pricing-2">
-                            <h3>Ovde napisi objasnjenje kako treba prvo da se bukira i kako terapija mora da ide 5 dana za redom....</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <form action="https://httppostsendmail20200614204433.azurewebsites.net/api/SendMail" method="post">
-                <div class="row">
-                    <div class="form-group">
-                        <div class="col-md-8 col-md-offset-2 subtext single-animate animate-pricing-2">
-                            <label for="exampleInputEmail1">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="email">
-                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
 
-                        </div>
-                        <div class="row">
-                            <div class="form-group">
-                                <div class="col-md-8 col-md-offset-2 subtext single-animate animate-pricing-2">
-
-                                    <label for="exampleInputPassword1">Password</label>
-                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password">
-
-                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                </div>
-
-
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
-
-        </div>
-    </div>
-    <!-- END OF Book Now Form ---------------------------------------------------------------------------->
-
-
+<div id="fh5co-press" data-section="press">
 <div class="contact_header jumbotron text-center">
   <h1 class="display-4">Contact us</h1>
   <p>Please Feel to contact us if you have anu question or query.</p>
@@ -518,45 +473,73 @@
 				<div class="row">
 					<div class="col-12 col-sm-6">
 						<div class="form-group">
-							<label>Name</label>
-							<input type="text" class="form-control" placeholder="Enter Name">
+
+                             <label for="exampleInputName1">Name</label>
+                                    <input type="name" class="form-control" id="exampleInputName1" placeholder="Name" name="name">
+
 						</div>
 					</div>
 					<div class="col-12 col-sm-6">
 					<div class="form-group">
-							<label>Email</label>
-							<input type="email" class="form-control" placeholder="Enter Email">
+						  <label for="exampleInputPatientName1">Patient Name</label>
+                                    <input type="patientname" class="form-control" id="exampleInputPatientName1" placeholder="Enter Patient Name" name="patientname">
+
+                            <small id="exampleInputPatientName1" class="form-text text-muted">If you are booking for someone else, please enter their name.</small>
+						</div>
+					</div>
+				</div>
+                <div class="row">
+					<div class="col-12 col-sm-6">
+						<div class="form-group">
+
+                            <label for="exampleInputPhone1">Phone</label>
+                                    <input type="phone" class="form-control" id="exampleInputPhone1" placeholder="Enter your phone number" name="phone">
+
+						</div>
+					</div>
+					<div class="col-12 col-sm-6">
+					<div class="form-group">
+							<label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="email">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
 						</div>
 					</div>
 				</div>
 				<div class="row mt-2">
 					<div class="col-12 col-sm-6">
 						<div class="form-group">
-							<label>Phone</label>
-							<input type="text" class="form-control" placeholder="Enter Phone">
+							 <label for="exampleInputCountry1">Country</label>
+                                    <input type="country" class="form-control" id="exampleInputCountry1" placeholder="Enter your country name" name="country">
+
 						</div>
 					</div>
 					<div class="col-12 col-sm-6">
 						<div class="form-group">
-							<label>City</label>
-							<input type="text" class="form-control" placeholder="Enter City">
+							 <label for="exampleInputCity1">City</label>
+                                    <input type="city" class="form-control" id="exampleInputCity1" placeholder="Enter your City" name="city">
+
 						</div>
 					</div>
 				</div>
 				<div class="row mt-2">
 					<div class="col-sm-12">
 						<div class="form-group">
-							<label>Subject</label>
-							<input type="text" class="form-control" placeholder="Enter Subject">
+							 <label for="exampleInputSubject1">Subject</label>
+                                    <input type="subject" class="form-control" id="exampleInputSubject1" placeholder="Enter the subject of your message" name="subject">
+
 						</div>
 					</div>
 				</div>
 				<div class="row mt-2">
 					<div class="col-sm-12">
 						<div class="form-group">
-							<label>Message</label>
+							 <label for="exampleInputMessage1">Message</label>
+                                    <input type="message" class="form-control" id="exampleInputMessage1" placeholder="Type your message here" name="message">
+
+<!--
 							<textarea class="form-control">
 							</textarea>
+-->
 						</div>
 					</div>
 				</div>
@@ -573,7 +556,7 @@
 	</div>
     </div>
     </form>
-
+    </div>
 
 
 
