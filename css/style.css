@@ -764,20 +764,20 @@ transform : translate3d(0, 0, 0);
 
     {
     background: #f8f8f8;
-    padding-bottom: 50px;
+    padding-bottom: 5px;
 }
 
 .contact_header {
     background: #153e55;
     border-radius: 0;
-    padding: 100px 0px 200px 40px;
+    padding: 5px 5px 2px 5px;
 }
 
 .contact_header h1 {
     color: #fff;
     font-size: 50px;
-    font-weight: 300;
-    padding: 70px;
+    font-weight: 200;
+    padding: 2px;
     text-transform: uppercase;
 }
 
@@ -789,9 +789,9 @@ transform : translate3d(0, 0, 0);
 }
 .contact_header p {
     color: #fff;
-    font-size: 22px;
-    font-weight: 300;
-    padding: 50px;
+    font-size: 18px;
+    font-weight: 100;
+    padding: 5px;
 }
 
 .contact_form_wrapper {
@@ -850,7 +850,7 @@ transform : translate3d(0, 0, 0);
 
 @media screen and (max-width:767px) {
     .contact_header {
-        padding: 50px 40px 150px 40px;
+        padding: 50px 40px 50px 40px;
     }
 
     .contact_header h1 {
