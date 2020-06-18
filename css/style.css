@@ -775,12 +775,23 @@ transform : translate3d(0, 0, 0);
 
 .contact_header h1 {
     color: #fff;
+    font-size: 50px;
     font-weight: 300;
+    padding: 70px;
+    text-transform: uppercase;
 }
 
+.contact_header h2 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 100;
+    padding: 50px;
+}
 .contact_header p {
     color: #fff;
-    font-size: 18px;
+    font-size: 22px;
+    font-weight: 300;
+    padding: 50px;
 }
 
 .contact_form_wrapper {
