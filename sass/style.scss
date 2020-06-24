@@ -833,6 +833,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+
 .btn {
 	text-transform: uppercase;
 	letter-spacing: 2px;
@@ -841,11 +842,15 @@ h1, h2, h3, h4, h5, h6 {
 		background: $brand-primary;
 		color: $brand-white;
 		border: none!important;
+        white-space: normal;
 		border: 2px solid transparent!important;
 		&:hover, &:active, &:focus {
 			box-shadow: none;
 			background: $brand-primary;
 		}
+	}
+    &.btn-block {
+        white-space: normal;
 	}
 	&:hover, &:active, &:focus {
 		background: #393e46!important;
@@ -855,6 +860,7 @@ h1, h2, h3, h4, h5, h6 {
 	&.btn-default {
 		&:hover, &:focus, &:active {
 			border-color: transparent;
+            white-space: normal;
 		}
 	}
 }
@@ -932,7 +938,7 @@ h1, h2, h3, h4, h5, h6 {
 	}
 	.btn-primary {
 		&:hover, &:focus, &:active {
-			background: transparent!important;
+			background: transparent!important; white-space: normal;
 			border: 2px solid $brand-white!important;
 		}
 	}
