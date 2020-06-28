@@ -76,6 +76,8 @@ h6 {
     background: #f9f6f0;
 }
 
+
+
 /*Floating Back-To-Top Button*/
 #myBtn {
     position: fixed;
@@ -361,6 +363,7 @@ transform : translate3d(0, 0, 0);
 #fh5co-features,
 #fh5co-testimonials,
 #fh5co-pricing,
+#fh5co-faq,
 #fh5co-press {
     padding: 7em 0;
 }
@@ -372,6 +375,7 @@ transform : translate3d(0, 0, 0);
     #fh5co-features,
     #fh5co-testimonials,
     #fh5co-pricing,
+    #fh5co-faq,
     #fh5co-press {
         padding: 5em 0;
     }
