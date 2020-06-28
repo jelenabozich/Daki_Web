@@ -230,29 +230,34 @@
                                     <li>It is especially emphasized that without the patient’s actual will to change behavior and habits this therapy will not have complete success. That’s why the therapy is exclusively done and scheduled with a patient, not with a cousin, a friend or any other person. They should be present if the patient needs help or curiosity for any reason. The therapy is conducted in Serbian and English, and may also be in French. All the information you need about the therapy, the agreement about the length of the therapy price and the method of payment via e-mail</li>
                                 </h3>
                                 <div class="row text-center">
-
-
+<script>
+	$(document).ready(function(){
+		$("#myModal").modal('show');
+	});
+</script>
+<style>
+    .bs-example{
+    	margin: 20px;
+    }
+</style>
                                     <a href="#myModal" class="btn btn-lg btn-primary" data-toggle="modal">Contact Us</a>
-
-                                    <div id="myModal" class="modal fade">
+<div class="bs-example">
+                                    <div id="myModal" class="modal fade" tabindex="-1">
                                         <div class="modal-dialog">
                                             <div class="modal-content">
                                                 <div class="modal-header">
-                                                    <div class="row">
-                                                        <div class="col-sm-12">
+
                                                             <h5 class="modal-title">Send Us a Message</h5>
                                                             <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                        </div>
+
                                                     </div>
                                                     <div class="modal-body">
                                                         <div class="row">
-                                                            <div class="col-sm-12">
+                                                            <div class="col-6">
                                                                 <!-- <div class="form-group">
                                 <label>Send me a Message</label>
                                 <input type="text" class="form-control">
                             </div>-->
-                                                                <div class="row">
-                                                                    <div class="col-6 col-sm-6">
                                                                         <div class="form-group">
                                                                             <label>Name</label>
                                                                             <input type="text" class="form-control">
@@ -261,7 +266,7 @@
 
 
 
-                                                                    <div class="col-6 col-sm-6">
+                                                                    <div class="col-6">
                                                                         <div class="form-group">
                                                                             <label>Email</label>
                                                                             <input type="email" class="form-control">
@@ -289,15 +294,14 @@
                                         </div>
 
                                     </div>
-
+</div>
 
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
+
 
         <!-- END of THERAPY -->
 
@@ -312,7 +316,7 @@
                 <div class="col-md-12 section-heading text-center">
                     <h2 class="single-animate animate-pricing-1">Booking with the Therapist</h2>
 
-                    <h3>To request a booking with the Therapist please fill out the form "Request Booking" and click on the </h3>
+                    <h3>To request a booking with the Therapist please fill out the form <strong>Booking Request</strong> and click on the </h3>
 
                 </div>
             </div>
@@ -322,6 +326,9 @@
         <!-- BEGINNING OF BOOKING FORM-->
         <form action="https://httppostsendmail20200614204433.azurewebsites.net/api/SendMail" method="post">
             <div class="contact_form_wrapper container">
+                <div class="contact_form_header text-center">
+                    <h2>Booking Request</h2>
+                            </div>
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="contact_form">
@@ -336,21 +343,17 @@
                                 <div class="col-12 col-sm-6">
 
                                     <div class="input-group-text" data-toggle="tooltip" data-placement="top" title="If you are booking for someone else, please enter their, Patient's, Full Name.">
-                                        <span>
-                                            <div class="input-group-prepend">
-                                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person-plus-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd" d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm7.5-3a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z" />
-                                                    <path fill-rule="evenodd" d="M13 7.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0v-2z" />
-                                                </svg></div>
+
+
 
                                             <label for="InputPatientName1">Patient Name</label>
 
                                             <input type="text" class="form-control" id="InputPatientName1" placeholder="" name="patientname">
 
-                                        </span>
-                                    </div>
 
-                                </div>
+                                    </div>
+</div></div>
+
                                 <div class="row">
                                     <div class="col-12 col-sm-6">
                                         <div class="form-group" data-toggle="tooltip" data-placement="top" title="Enter the patient's Skype username. If the patient does not have a Skype account, include the Skype contact details the patient has access to. Alternatively, if the patient does not have Skype account to use, leave the field blank.">
@@ -401,7 +404,7 @@
                                         <button type="submit" class="btn btn-primary">Submit</button>
                                     </div>
                                 </div>
-                            </div>
+
                         </div>
                     </div>
                 </div>
