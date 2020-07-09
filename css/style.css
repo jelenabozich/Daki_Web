@@ -76,7 +76,46 @@ h6 {
     background: #f9f6f0;
 }
 
+/*Contact Us Button for modal form*/
+#cntctBtn {
+    background: none;
+    color: rgba(255, 255, 255, 0.5);
+    outline: none !important;
+    border: none !important;
+    }
 
+#cntctBtn:hover
+        :focus
+        :active
+{
+    opacity: 1;
+    background: transparent !important;
+    color: #fff;
+    border: 2px solid #fff !important;
+}
+
+
+/*Floating Back-To-Top Button*/
+#myCFloat {
+    position: fixed;
+    bottom: 300px;
+    float: right;
+    right: 18%;
+    left: 72%;
+    max-width: 80px;
+    width: 100%;
+    font-size: 16px;
+    border-color: rgba(85, 85, 85, 0.2);
+    background-color: #818892;
+    padding: .5px;
+    border-radius: 4px;
+
+}
+
+/*On Hover Color Change*/
+#myBtn:hover {
+    background-color: #153e55;
+}
 
 /*Floating Back-To-Top Button*/
 #myBtn {

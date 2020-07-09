@@ -43,6 +43,7 @@
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <!-- Bootstrap  -->
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
     <!-- Font Awesome (Ikonice) -->
@@ -52,6 +53,7 @@
     <!-- JQuery for Contact Us Modal Submit messages (sucess and error)-->
     <!-- Modernizr JS -->
     <script src="js/modernizr-2.6.2.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css">
     <!-- JQuery for Contact Us form error mesages -->
     <script src="js/form.js"></script>
 </head>
@@ -80,7 +82,7 @@
                             <li><a href="index-sr.html"><img src="images/Coat_of_arms_of_Serbia_small.svg" alt="HTML tutorial" style="width:42px;height:42px;"></a></li>
                             <form class="form-inline">
                                 <span>
-                                <button id="cntct" class="btn btn-link btn-outline-secondary my-2 my-sm-0" type="button" data-toggle="modal" data-target="#exampleModal">Contact Us</button>
+                                <button id="cntctBtn" class="btn" type="button" data-toggle="modal" data-target="#exampleModal">Contact Us</button>
                                     </span>
                             </form>
 
@@ -207,7 +209,7 @@
                                 <hr>
                                 The cause of the emergence is psychology, that is, the lack of observation and fulfillment of our needs, desires, interests, etc. Therefore, this is not a disease, but a condition, so I will refer to it as such bellow.<br>
                                 <hr>
-                                Usually, the first significant symptoms are caused by a stressful situation. This may not necessarily be a terrible event happening, but rather an unfortunate happenstance that has led to the appearance of symptoms under the influence of our bad moods, negative things happening to us in succession, or even something else. So, the stress itself is not the trigger so much as our reaction to the stress. Symptoms can be different and almost always vary from person to person. Therefore, neurologists often diagnose various atypical forms of MS, but it is, in fact, all the same condition. Symptoms that accompany this condition are drastic, because they affect our everyday life, and therefore they lead to fear.<br>
+                                Usually, the first significant symptoms are caused by a stressful situation. This may not necessarily be a terrible event happening, but rather an unfortunate happenstance that has led to the appearance of symptoms under the influence of our bad moods, negative things happening to us in succession, or even something else. So, the stress itself is not the trigger so much as our reaction to the stress. Symptoms can be different and almost always vary from person to person. Therefore, neurologists often diagnose various atypical forms of MS (in addition to the 4 basic types according to the way the disease acts) but it is, in fact, all the same condition. Symptoms that accompany this condition are drastic, because they affect our everyday life, and therefore they lead to fear.<br>
                                 <hr>
                                 Fear is a fundamental consequence accompanying the development of a progressive condition, especially when going to a neurologist with your symptoms and having MS diagnosed as an incurable disease, for which neither the cause, the course, nor the cure are known. This fear becomes an integral part of life of patients with this condition. Because it feels like such a hopeless situation and because the symptoms make you feel insecure, weak, and helpless, diagnosis often leads to depression. It can cause you to close yourself within your house because no one can help you, nor can they understand your pain. It may even become so that you hide away from people’s eyes because they bother you. The fear leads to unimaginable psycho-somatic consequences, which lead to various problems, and even physical pain.
                                 <hr>
@@ -237,9 +239,13 @@
                                     <li>It is especially emphasized that without the patient’s actual will to change behavior and habits this therapy will not have complete success. That’s why the therapy is exclusively done and scheduled with a patient, not with a cousin, a friend or any other person. They should be present if the patient needs help or curiosity for any reason. The therapy is conducted in Serbian and English, and may also be in French. All the information you need about the therapy, the agreement about the length of the therapy price and the method of payment via e-mail</li>
                                 </h3>
                             </div>
+
                         </div>
                     </div>
+                        <button id="myCFloat" class="btn" type="button" data-toggle="modal" data-target="#exampleModal">Contact Us</button>
+
                 </div>
+
             </div>
         </div>
     </div>
@@ -370,6 +376,9 @@
                                 </div>
                             </div>
                         </div>
+
+
+
                         <div class="row text-center">
                             <div class="col-sm-12 col-sm-6">
                                 <button type="submit" class="btn btn-primary">Submit</button>
@@ -773,7 +782,13 @@
     <script src="js/owl.carousel.min.js"></script>
     <!-- Main JS (Do not remove) -->
     <script src="js/main.js"></script>
-    <button id="myBtn"><a href="#top" style="color: white">Top</a></button>
+    <!-- Date Picker -->
+<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.14.1/moment.min.js"></script>
+<!--    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
+    <button id="myCFloat"><a href="#top" style="color: white">Contact</a></button>
+
 </body>
 
 </html>
