@@ -95,7 +95,7 @@ h6 {
 }
 
 
-/*Floating Back-To-Top Button*/
+/*Floating Back-To-Top Button
 #myCFloat {
     position: fixed;
     bottom: 300px;
@@ -110,7 +110,7 @@ h6 {
     padding: .5px;
     border-radius: 4px;
 
-}
+}*/
 
 /*On Hover Color Change*/
 #myBtn:hover {
@@ -121,13 +121,14 @@ h6 {
 #myBtn {
     position: fixed;
     bottom: 300px;
-    float: right;
-    right: 18%;
-    left: 72%;
+    float: left;
+    right: 70%;
+    left:25%;
     max-width: 80px;
     width: 100%;
     font-size: 16px;
     border-color: rgba(85, 85, 85, 0.2);
+    opacity: 0.5;
     background-color: #818892;
     padding: .5px;
     border-radius: 4px;
