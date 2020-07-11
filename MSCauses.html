@@ -60,7 +60,7 @@
 
 <body>
     <!-- Beginning of NAVBAR -->
-    <header role="banner" id="fh5co-header"  style="background: #4f95bc">
+    <header role="banner" id="fh5co-header">
         <div class="container">
             <!-- <div class="row"> -->
             <nav class="navbar navbar-default">
@@ -70,8 +70,8 @@
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <div class="d-flex justify-content-around">
-                        <h4 class="nav navbar-nav">
-                  <li class="active"><a href="index.html" data-nav-section="home"><span>Home</span></a></li>
+                        <h4 class="nav navbar-nav" style="color: fff; opacity: 0.5">
+                            <li class="active"><a href="index.html" data-nav-section="home"><span>Home</span></a></li>
                             <li><a href="index.html" data-nav-section="about"><span>About Me</span></a></li>
                             <li><a href="MSCauses.html"><span>MS Causes, Symptoms and Consequences</span></a></li>
                             <li><a href="index.html" data-nav-section="features"><span>Therapy</span></a></li>
@@ -93,98 +93,39 @@
     </header>
     <!-- END of NAVBAR -->
 
-    <!-- BEGINNING of PRICING -->
-    <div id="fh5co-pricing" data-section="pricing">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-12 section-heading text-center">
-                    <h2 class="single-animate animate-pricing-1">Pricing</h2>
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2 subtext single-animate animate-pricing-2">
-                            <h3>Ovde napisi objasnjenje kako treba prvo da se bukira i kako terapija mora da ide 5 dana za redom....</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="price-box to-animate">
-                        <h2 class="pricing-plan">Single Consultation</h2>
-                        <div class="price"><sup class="currency">€</sup>50.00</div>
-                        <p>Single session with the therapist</p>
-                        <p>Usually lasting anywhere between 1h and 1h and 30min</p>
-                        <hr>
-                        <div id="paypal-button-container"></div>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="price-box to-animate">
-                        <h2 class="pricing-plan">Five Therapy Sessions</h2>
-                        <div class="price"><sup class="currency">€</sup>150.00</div>
-                        <p>Five sessions with the therapist</p>
-                        <p>Conducted five consecutive days in a row</p>
-                        <hr>
-                        <div id="paypal-button-container-2"></div>
-                        <!-- Include the PayPal JavaScript SDK -->
-                        <script src="https://www.paypal.com/sdk/js?client-id=AUVm9P6M_kgFPchhtrN3cxx_ZmgfIBmNAotYp1CpOxN2BgXfExGwOtV7pPYRAi4wU6aN_HolnqeX6lsg&currency=EUR"></script>
-                        <script>
-                            // Render the PayPal button into #paypal-button-container
-                            paypal.Buttons({
-                                // Set up the transaction
-                                createOrder: function(data, actions) {
-                                    return actions.order.create({
-                                        purchase_units: [{
-                                            amount: {
-                                                value: '50'
-                                            },
-                                            description: 'Single consultation'
-                                        }],
-                                        application_context: {
-                                            shipping_preference: 'NO_SHIPPING'
-                                        }
-                                    });
-                                },
-                                // Finalize the transaction
-                                onApprove: function(data, actions) {
-                                    return actions.order.capture().then(function(details) {
-                                        // Show a success message to the buyer
-                                        alert('Transaction completed by ' + details.payer.name.given_name + '!');
-                                    });
-                                }
-                            }).render('#paypal-button-container');
-                            paypal.Buttons({
-                                // Set up the transaction
-                                createOrder: function(data, actions) {
-                                    return actions.order.create({
-                                        purchase_units: [{
-                                            amount: {
-                                                value: '150'
-                                            },
-                                            description: 'Therapy - Five Consecutive Sessions'
-                                        }],
-                                        application_context: {
-                                            shipping_preference: 'NO_SHIPPING'
-                                        }
-                                    });
-                                },
-                                // Finalize the transaction
-                                onApprove: function(data, actions) {
-                                    return actions.order.capture().then(function(details) {
-                                        // Show a success message to the buyer
-                                        alert('Transaction completed by ' + details.payer.name.given_name + '!');
-                                    });
-                                }
-                            }).render('#paypal-button-container-2');
 
-                        </script>
+
+
+    <!-- Beginning of MS CAUSES and SYMPTOMS -->
+    <div id="fh5co-our-services" data-section="services">
+        <div class="container">
+            <div class="row row-bottom-padded-sm">
+                <div class="col-md-12 section-heading text-center">
+                    <h2 class="to-animate">MS Causes, Symptoms and Consequences</h2>
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2 to-animate">
+                            <h3>Based on my studies, experience in working with numerous MS patients and especially living and treating my wife for more than 17 years, I have gathered a unique and intimate knowledge and understanding of the <strong>causes and triggers</strong> for various <strong>MS symptoms</strong>  as well as <strong>consequences</strong>  it brings to patients, their families and caretakers. Living and breathing the distress and hardships patients go through and working with them for almost two decades now I have been able to set up and refine a unique and successful therapy giving consistent and impressive results. Here, I will atempt to summarize the most important insights that will explain why and how the therapy system was established.<br>
+                                <hr>
+                                One of the common precursors among MS patients lies in <strong>wrong attitude and behavior towards oneself</strong>. Most often, individuals are not aware of this. Treating ourselves that way is destructive to our body. Our body is very durable, especially when it’s young and able to withstand the abuse we inflict it, even for decades, but one day it’s just no longer able to do it, and this is <strong>manifested in symptoms</strong> at the places <strong>where we are most sensitive</strong>. <strong>In MS patients, these places are nerves</strong>. It could be that we’ve been treating ourselves that way our entire lives. It does not matter if such behavior is a consequence of education, material status, environment, social imposition, or simply a consequence of personality.<br>
+                                <hr>
+                                 <strong>Therefore, the causes lie is psychology, that is, in the lack of observation and fulfillment of our needs, desires, interests, etc. Hence, this is not a disease, but a condition, so I will refer to it as such bellow.</strong><br>
+                                <hr>
+                                Usually, the <strong>first significant symptoms</strong>strong> are caused by a stressful situation. This may not necessarily be a terrible event happening, but rather an unfortunate happenstance that has led to the appearance of symptoms under the influence of our bad moods, negative things happening to us in succession, or even something else. So, the stress itself is not the trigger so much as our reaction to the stress. Symptoms can be different and almost always vary from person to person. Therefore, neurologists often diagnose various atypical forms of MS (in addition to the 4 basic types according to the way the disease acts) but it is, in fact, all the same condition. Symptoms that accompany this condition are drastic, because they affect our everyday life, and therefore they lead to fear.<br>
+                                <hr>
+                                <strong>Fear</strong>strong> is a <strong>fundamental consequence</strong>strong> accompanying the development of a progressive condition, especially when going to a neurologist with your symptoms and having MS diagnosed as an incurable disease, for which neither the cause, the course, nor the cure are known. This fear becomes an integral part of life of patients with this condition. Because it feels like such a hopeless situation and because the symptoms make you feel insecure, weak, and helpless, diagnosis often leads to depression. It can cause you to close yourself within your house because no one can help you, nor can they understand your pain. It may even become so that you hide away from people’s eyes because they bother you. <strong>The fear leads to unimaginable psycho-somatic consequences, which lead to various problems, and even physical pain.</strong>
+                                <hr>
+                            </h3>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- END OF PRICING -->
+    <!-- END of MS CAUSES and SYMPTOMS -->
 
- <!-- Beginning of CONTACT US FORM -->
+
+
+    <!-- Beginning of CONTACT US FORM -->
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
@@ -228,6 +169,7 @@
             </div>
         </div>
     <!-- END of CONTACT US FORM -->
+
 
     <!-- START OF FOOTER ------------------------->
     <footer id="footer" role="contentinfo">
