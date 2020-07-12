@@ -54,7 +54,7 @@
 
 <body>
     <!-- Beginning of NAVBAR -->
-    <header role="banner" id="fh5co-header">
+    <header role="banner" id="fh5co-header" style="background: #4f95bc">
         <div class="container">
             <!-- <div class="row"> -->
             <nav class="navbar navbar-default">
@@ -68,7 +68,7 @@
                             <li class="active"><a href="index-sr.html" data-nav-section="home"><span>Početna</span></a></li>
                             <li><a href="index-sr.html" data-nav-section="about"><span>Više o Terapeutu</span></a></li>
                             <li><a href="index-sr.html" data-nav-section="features"><span>O Terapiji</span></a></li>
-                        <li><a href="MSCauses-sr.html"><span>MS Uzroci, Simptomi i Posledice</span></a></li>
+                            <li><a href="MSCauses-sr.html"><span>MS Uzroci, Simptomi i Posledice</span></a></li>
                             <li><a href="Book-sr.html"><span>Zakažite Termin</span></a></li>
                             <li><a href="pricing-sr.html"><span>Cenovnik i Plaćanje</span></a></li>
                             <li><a href="mystory-sr.html"><span>Nadina Priča</span></a></li>
@@ -135,15 +135,20 @@
 
                         <div class="row">
                             <div class="col-12 col-sm-6">
-                                <div class="form-group" data-toggle="tooltip" data-placement="top" title="Enter the patient's Skype username. If the patient does not have a Skype account, include the Skype contact details the patient has access to. Alternatively, if the patient does not have Skype account to use, leave the field blank.">
-                                    <label for="InputSkype1">Skype Korisnicko Ime</label>
-                                    <input type="skype" class="form-control" id="InputSkype1" placeholder="" name="skype">
 
-                                </div>
+                                <div class="form-group" data-toggle="tooltip" data-placement="top" title="Please select the treatment you are interested in booking.">
+                                    <label for="InterestedInSelect">Želim da Bukiram:</label>
+                                    <select type="interestedIn" class="form-control" id="InterestedInSelect" placeholder="" name="interestedin">
+                                         <option>Izaberite Opciju</option>
+                                        <option>Jednu Konsultaciju</option>
+                                        <option>Terapiju</option>
+                                    </select>
+
+                            </div>
                             </div>
                             <div class="col-12 col-sm-6">
                                 <div class="form-group" data-toggle="tooltip" data-placement="top" title="Enter the patient's email address.">
-                                    <label for="InputEmail1">Email adresa</label>
+                                    <label for="InputEmail1">Imail-adresa</label>
                                     <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="" name="email">
 
                                 </div>
@@ -164,14 +169,14 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-sm-12 col-sm-6">
+                            <div class="col-sm-12">
                                 <div class="form-group" data-toggle="tooltip" data-placement="top" title="If the patient has an established Diagnosis, please include it here. If not, then include the symptoms patient is experiencing.">
                                     <label for="InputDiagnosisSympt1">Dijagnoza ili Simptomi</label><textarea class="form-control" id="InputDiagnosisSympt1" placeholder="" name="diagnosisSympt" class="form-text text-muted"></textarea>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-sm-12 col-sm-6">
+                            <div class="col-sm-12">
                                 <div class="form-group" data-toggle="tooltip" data-placement="top" title="If you have any other questions and/or comments please include them here.">
                                     <label for="InputMessage1">Poruka</label>
                                     <textarea class="form-control" id="InputMessage1" placeholder="" name="message" class="form-text text-muted"></textarea>
@@ -180,7 +185,7 @@
                         </div>
                         <div class="row text-center">
                             <div class="col-sm-12 col-sm-6">
-                                <button type="submit" class="btn btn-primary">Posalji</button>
+                                <button type="submit" class="btn btn-primary">Pošalji</button>
                             </div>
                         </div>
 
