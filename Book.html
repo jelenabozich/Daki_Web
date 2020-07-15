@@ -65,7 +65,7 @@
             <!-- <div class="row"> -->
             <nav class="navbar navbar-default">
                 <div class="navbar-header">
-                             <button id="cntctBtn" class="btn" type="button" data-toggle="modal" data-target="#exampleModal">Contact Us</button>
+                    <button id="cntctBtn" class="btn" type="button" data-toggle="modal" data-target="#exampleModal">Contact Us</button>
                     <!-- Mobile Toggle Menu Button -->
                     <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
                 </div>
@@ -90,25 +90,166 @@
     </header>
     <!-- END of NAVBAR -->
 
-    <!-- BEGINNING OF BOOKING Heading Section-->
+
+    <!-- Special version of Bootstrap that only affects content wrapped in .bootstrap-iso -->
+    <link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
+
+    <!--Font Awesome (added because you use icons in your prepend/append)-->
+    <link rel="stylesheet" href="https://formden.com/static/cdn/font-awesome/4.4.0/css/font-awesome.min.css" />
 
 
-        <div class="container-fluid">
-              <div class="col-md-12 section-heading text-center">
-                    <h2 class="single-animate">Booking</h2>
+<!-- BEGINNING OF BOOKING Heading Section-->
+    <div class="container-fluid">
+        <div class="col-md-12 section-heading text-center">
+            <h2 class="single-animate">Booking</h2>
 
             <div class="row">
                 <div class="col-md-8 col-md-offset-2 subtext">
-                            <h3>To request a booking please fill out and submit the form below and the Therapist will contact you directly via email to arrange a suitable time slot.If you have any questions or queries about the booking or payment process use the <strong>Contact Us</strong> button below to send a message to the Terapist.</h3>
-                        </div>
-                    </div>
-                      <button id="myCFloat" class="btn" type="button" data-toggle="modal" data-target="#exampleModal">Contact Us</button>
+                    <h3>To request a booking with the therapist, please fill out and submit the form below. The Therapist will contact you directly via email provided in the form to schedule the time for the appointment(s).<br>
+                        Once your appointment(s) is scheduled and confirmed between you and the therapist, the payment will be due. The payment can be securely completed via <a href="pricing.html"><span>Pricing and Payment</span></a> page.
+                        If you have any questions about the booking, payment or anything else, please feel free to use the Contact Us button below to send your query. The therapist will respond to you as soon as possible.</h3>
                 </div>
+            </div>
+            <button id="myCFloat" class="btn" type="button" data-toggle="modal" data-target="#exampleModal">Contact Us</button>
+        </div>
+    </div>
+    <!-- END OF BOOKING Heading Section-->
+
+<!--
+     HTML Form (wrapped in a .bootstrap-iso div)
+    <div class="bootstrap-iso">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <form action="https://httppostsendmail20200614204433.azurewebsites.net/api/SendMail" method="post">
+                        <div class="form-group ">
+                            <label class="control-label " for="name1">
+                                Name of Person Booking
+                            </label>
+                            <div class="input-group">
+                                <div class="input-group-addon">
+                                    <i class="fa fa-user">
+                                    </i>
+                                </div>
+                                <input class="form-control" id="name1" name="name1" placeholder="Name and Surname" type="text" />
+                            </div>
+                            <span class="help-block" id="hint_name1">
+                                Name of person booking/paying if different than patient
+                            </span>
+                        </div>
+                        <div class="form-group ">
+                            <label class="control-label requiredField" for="PatientName">
+                                Patient Name
+                                <span class="asteriskField">
+                                    *
+                                </span>
+                            </label>
+                            <div class="input-group">
+                                <div class="input-group-addon">
+                                    <i class="fa fa-user">
+                                    </i>
+                                </div>
+                                <input class="form-control" id="PatientName" name="PatientName" placeholder="Name and Surname" type="text" />
+                            </div>
+                            <span class="help-block" id="hint_PatientName">
+                                Name of the Patient
+                            </span>
+                        </div>
+                        <div class="form-group ">
+                            <label class="control-label requiredField" for="patientemail">
+                                Patient Email
+                                <span class="asteriskField">
+                                    *
+                                </span>
+                            </label>
+                            <div class="input-group">
+                                <div class="input-group-addon">
+                                    <i class="fa fa-envelope-o">
+                                    </i>
+                                </div>
+                                <input class="form-control" id="patientemail" name="patientemail" type="text" />
+                            </div>
+                            <span class="help-block" id="hint_patientemail">
+                                enter patient's email address
+                            </span>
+                        </div>
+                        <div class="form-group ">
+                            <label class="control-label requiredField" for="InterestedInBooking">
+                                Interested in Booking?
+                                <span class="asteriskField">
+                                    *
+                                </span>
+                            </label>
+                            <select class="select form-control" id="InterestedInBooking" name="InterestedInBooking">
+                                <option value="Please Select">
+                                    Please Select
+                                </option>
+                                <option value="Consultation">
+                                    Consultation
+                                </option>
+                                <option value="Therapy">
+                                    Therapy
+                                </option>
+                            </select>
+                            <span class="help-block" id="hint_InterestedInBooking">
+                                Select what you would like to book
+                            </span>
+                        </div>
+                        <div class="form-group ">
+                            <label class="control-label requiredField" for="patientcountry">
+                                Country
+                                <span class="asteriskField">
+                                    *
+                                </span>
+                            </label>
+                            <div class="input-group">
+                                <div class="input-group-addon">
+                                    <i class="fa fa-globe">
+                                    </i>
+                                </div>
+                                <input class="form-control" id="patientcountry" name="patientcountry" type="text" />
+                            </div>
+                            <span class="help-block" id="hint_patientcountry">
+                                Enter patient's country
+                            </span>
+                        </div>
+                        <div class="form-group ">
+                            <label class="control-label requiredField" for="DiagnosisSympt">
+                                Diagnosis or Symptoms
+                                <span class="asteriskField">
+                                    *
+                                </span>
+                            </label>
+                            <textarea class="form-control" cols="40" id="DiagnosisSympt" name="DiagnosisSympt" rows="10"></textarea>
+                            <span class="help-block" id="hint_DiagnosisSympt">
+                                Enter diagnosis if available and describe patient's symptoms
+                            </span>
+                        </div>
+                        <div class="form-group ">
+                            <label class="control-label " for="message">
+                                Message
+                            </label>
+                            <textarea class="form-control" cols="40" id="message" name="message" rows="10"></textarea>
+                            <span class="help-block" id="hint_message">
+                                Type your message here
+                            </span>
+                        </div>
+                        <div class="form-group">
+                            <div>
+                                <button class="btn btn-primary " name="submit" type="submit">
+                                    Submit
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
 
+-->
 
 
-    <!-- END OF BOOKING Heading Section-->
 
     <!-- BEGINNING OF BOOKING FORM-->
     <form action="https://httppostsendmail20200614204433.azurewebsites.net/api/SendMail" method="post">
@@ -121,43 +262,45 @@
                     <div class="contact_form">
                         <div class="row">
                             <div class="col-12 col-sm-6">
-                                <div class="form-group" data-toggle="tooltip" data-placement="top" title="Enter the Full Name of the person booking and/or paying for the patient.">
+                                <div class="form-group" data-toggle="tooltip" data-placement="top" title="Enter your Full Name if booking and/or paying for another person/patient.">
                                     <label for="InputName1">Name</label>
-                                    <input type="name" class="form-control" id="InputName1" placeholder="" name="name">
+                                    <input type="name" class="form-control" id="InputName1" placeholder="Enter your name if different from Patient Name" name="name">
                                 </div>
                             </div>
                             <div class="col-12 col-sm-6">
                                 <div class="input-group-text" data-toggle="tooltip" data-placement="top" title="If you are booking for someone else, please enter their, Patient's, Full Name.">
-                                    <label for="InputPatientName1">Patient Name</label>
-                                    <input type="text" class="form-control" id="InputPatientName1" placeholder="" name="patientname">
+                                    <label for="InputPatientName1">Patient Name<span class="asteriskField">*</span></label>
+<!--                                    <div class="input-group-addon"><i class="fa fa-user"></i></div>-->
+                                    <input type="text" class="form-control" id="InputPatientName1" placeholder="Enter patient name" name="patientname" required maxlength="50">
                                 </div>
                             </div>
+
+
+
                         </div>
                         <div class="row">
                             <div class="col-12 col-sm-6">
                                 <div class="form-group" data-toggle="tooltip" data-placement="top" title="Please select the treatment you are interested in booking.">
                                     <label for="InterestedInSelect">Interested in Booking:</label>
-                                    <select type="interestedIn" class="form-control" id="InterestedInSelect" placeholder="" name="interestedin">
+                                    <select type="interestedIn" class="form-control" id="InterestedInSelect" placeholder="" name="interestedin" required>
                                         <option>Select Option</option>
                                         <option>Single Consultation</option>
                                         <option>Therapy</option>
                                     </select>
                                 </div>
                             </div>
-
-
                             <div class="col-12 col-sm-6">
                                 <div class="form-group" data-toggle="tooltip" data-placement="top" title="Enter the patient's email address.">
-                                    <label for="InputEmail1">Email address</label>
-                                    <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="" name="email">
+                                    <label for="InputEmail1">Email address<span class="asteriskField">*</span></label>
+                                    <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="" name="email" required maxlength="50">
                                 </div>
                             </div>
                         </div>
                         <div class="row mt-2">
                             <div class="col-12 col-sm-6">
                                 <div class="form-group" data-toggle="tooltip" data-placement="top" title="Enter the patient's Country Name.">
-                                    <label for="InputCountry1">Country</label>
-                                    <input type="country" class="form-control" id="InputCountry1" placeholder="" name="country">
+                                    <label for="InputCountry1">Country<span class="asteriskField">*</span></label>
+                                    <input type="country" class="form-control" id="InputCountry1" placeholder="" name="country" required>
                                 </div>
                             </div>
                             <div class="col-12 col-sm-6">
@@ -170,7 +313,7 @@
                         <div class="row">
                             <div class="col-sm-12">
                                 <div class="form-group" data-toggle="tooltip" data-placement="top" title="If the patient has an established Diagnosis, please include it here. If not, then include the symptoms patient is experiencing.">
-                                    <label for="InputDiagnosisSympt1">Diagnosis or Symptoms</label><textarea class="form-control" id="InputDiagnosisSympt1" placeholder="" name="diagnosisSympt" class="form-text text-muted"></textarea>
+                                    <label for="InputDiagnosisSympt1">Diagnosis or Symptoms<span class="asteriskField">*</span></label><textarea class="form-control" id="InputDiagnosisSympt1" placeholder="" name="diagnosisSympt" class="form-text text-muted" maxlength="6000" rows="7" required></textarea>
                                 </div>
                             </div>
                         </div>
@@ -178,57 +321,17 @@
                             <div class="col-sm-12">
                                 <div class="form-group" data-toggle="tooltip" data-placement="top" title="If you have any other questions and/or comments please include them here.">
                                     <label for="InputMessage1">Message</label>
-                                    <textarea class="form-control" id="InputMessage1" placeholder="" name="message" class="form-text text-muted"></textarea>
+                                    <textarea class="form-control" id="InputMessage1" placeholder="" name="message" class="form-text text-muted" maxlength="6000" rows="7"></textarea>
                                 </div>
                             </div>
                         </div>
-
-
-
                         <div class="row text-center">
                             <div class="col-sm-12 col-sm-6">
-                                <button type="submit" class="btn btn-primary">Submit</button>
+                                                                <button type="submit" class="btn btn-primary">Submit</button>
+<!--                                <input type="submit" name="submit" id="submit" value="Submit" class="btn btn-info pull-right">-->
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </form>
-    <!-- END OF CONTACT and BOOKING -->
-
-     <!-- Beginning of CONTACT US FORM -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Contact Us</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <form action="https://httppostsendmail20200614204433.azurewebsites.net/api/SendMail" method="post">
-                           <p>
-                                If you have a question or quiry that is not adddressed in the <a>href="FAQ.html"</a>  section use the form below and I will get back to you as soon as I can.
-                            </p>
-                            <div class="form-group">
-                                <label for="recipient-name" class="col-form-label">Full Name:</label>
-                                <input type="name" class="form-control" id="InputName1" name="name" required maxlength="50">
-                            </div>
-                            <div class="form-group">
-                                <label for="InputEmail1" class="col-form-label">Your Email Address:</label>
-                                <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="" name="email" required maxlength="50">
-                            </div>
-                            <div class="form-group">
-                                <label for="message-text" class="col-form-label">Message:</label>
-                                <textarea class="form-control" id="message-text" placeholder="Your Message Here" maxlength="6000" rows="7" required></textarea>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                <input type="submit" name="submit" id="submit" value="Submit" class="btn btn-info pull-right">
-                            </div>
-                        </form>
+<!--
                         <div id="success_message" style="width:100%; height:100%; display:none; ">
                             <h3>Sent your message successfully!</h3>
                         </div>
@@ -236,10 +339,58 @@
                             <h3>Error</h3>
                             Sorry there was an error sending your form.
                         </div>
+-->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </form>
+    <!-- END OF CONTACT and BOOKING -->
+
+    <!-- Beginning of CONTACT US FORM -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Contact Us</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="https://httppostsendmail20200614204433.azurewebsites.net/api/SendMail" method="post">
+                        <p>
+                            If you have a question or quiry that is not adddressed in the <a href="FAQ.html"><span>FAQ</span></a> section use the form below and I will get back to you as soon as I can.
+                        </p>
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Full Name:</label>
+                            <input type="name" class="form-control" id="InputName1" name="name" required maxlength="50">
+                        </div>
+                        <div class="form-group">
+                            <label for="InputEmail1" class="col-form-label">Your Email Address:</label>
+                            <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="" name="email" required maxlength="50">
+                        </div>
+                        <div class="form-group">
+                            <label for="message-text" class="col-form-label">Message:</label>
+                            <textarea class="form-control" id="message-text" placeholder="Your Message Here" maxlength="6000" rows="7" required></textarea>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <input type="submit" name="submit" id="submit" value="Submit" class="btn btn-info pull-right">
+                        </div>
+                    </form>
+                    <div id="success_message" style="width:100%; height:100%; display:none; ">
+                        <h3>Sent your message successfully!</h3>
+                    </div>
+                    <div id="error_message" style="width:100%; height:100%; display:none; ">
+                        <h3>Error</h3>
+                        Sorry there was an error sending your form.
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     <!-- END of CONTACT US FORM -->
 
 
@@ -277,9 +428,9 @@
     <!-- Main JS (Do not remove) -->
     <script src="js/main.js"></script>
     <!-- Date Picker -->
-<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
+    <!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
     <script src="https://cdn.jsdelivr.net/momentjs/2.14.1/moment.min.js"></script>
-<!--    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
+    <!--    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
     <!--     <button id="myBtn"><a href="#top" style="color: white">Top</a></button>
     <!--<button id="myCFloat"><a href="#top" style="color: white">Contact</a></button>-->
