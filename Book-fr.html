@@ -65,23 +65,24 @@
             <!-- <div class="row"> -->
             <nav class="navbar navbar-default">
                 <div class="navbar-header">
-                    <button id="cntctBtn" class="btn" type="button" data-toggle="modal" data-target="#exampleModal">Contact Us</button>
+                    <button id="cntctBtn" class="btn" type="button" data-toggle="modal" data-target="#exampleModal">Nous contacter</button>
                     <!-- Mobile Toggle Menu Button -->
                     <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <div class="d-flex justify-content-around">
                         <h4 class="nav navbar-nav" style="color: fff; opacity: 0.5">
-                            <li class="active"><a href="index.html" data-nav-section="home"><span>Home</span></a></li>
-                            <li><a href="index.html" data-nav-section="about"><span>About Me</span></a></li>
-                            <li><a href="MSCauses.html"><span>MS Causes, Symptoms and Consequences</span></a></li>
-                            <li><a href="index.html" data-nav-section="features"><span>Therapy</span></a></li>
-                            <li><a href="mystory.html"><span>Testimony</span></a></li>
-                            <li><a href="pricing.html"><span>Pricing</span></a></li>
-                            <li><a href="Book.html"><span>Book Now</span></a></li>
-                            <li><a href="FAQ.html"><span>FAQ</span></a></li>
-                          <li><a href="index-sr.html"><img src="images/srb.png"><span>Srb</span></a></li>
+                             <li class="active"><a href="index-fr.html" data-nav-section="home"><span>Accueil</span></a></li>
+                            <li><a href="index-fr.html" data-nav-section="about"><span>Rencontrez le thérapeute</span></a></li>
+                            <li><a href="index-fr.html" data-nav-section="features"><span>À propos de la thérapie</span></a></li>
+                            <li><a href="Book-fr.html"><span>Reserve maintenant</span></a></li>
 
+                             <li><a href="pricing-fr.html"><span>Prix et paiement</span></a></li>
+                             <li><a href="MSCauses-fr.html"><span>Causes, symptômes et conséquences de la SEP</span></a></li>
+                            <li><a href="mystory-fr.html"><span>Témoignage</span></a></li>
+                            <li><a href="FAQ.html"><span>FAQ</span></a></li>
+                            <li><a href="index-sr.html"><img src="images/srb.png"><span>Srb</span></a></li>
+                            <li><a href="index.html"><img src="images/eng.png"><span>Eng</span></a></li>
                         </h4>
                     </div>
                 </div>
@@ -91,26 +92,22 @@
     <!-- END of NAVBAR -->
 
 
-    <!-- Special version of Bootstrap that only affects content wrapped in .bootstrap-iso -->
-    <link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
-
-    <!--Font Awesome (added because you use icons in your prepend/append)-->
-    <link rel="stylesheet" href="https://formden.com/static/cdn/font-awesome/4.4.0/css/font-awesome.min.css" />
-
 
 <!-- BEGINNING OF BOOKING Heading Section-->
     <div class="container-fluid">
         <div class="col-md-12 section-heading text-center">
-            <h2 class="single-animate">Booking</h2>
+            <br><br><br><br>
+            <h2 class="single-animate">Rendez-vous</h2>
 
             <div class="row">
                 <div class="col-md-8 col-md-offset-2 subtext">
-                    <h3>To request a booking with the therapist, please fill out and submit the form below. The Therapist will contact you directly via email provided in the form to schedule the time for the appointment(s).<br>
-                        Once your appointment(s) is scheduled and confirmed between you and the therapist, the payment will be due. The payment can be securely completed via <a href="pricing.html"><span>Pricing and Payment</span></a> page.
-                        If you have any questions about the booking, payment or anything else, please feel free to use the Contact Us button below to send your query. The therapist will respond to you as soon as possible.</h3>
+                   <h3> Pour demander une réservation avec le thérapeute, veuillez remplir et soumettre le formulaire ci-dessous. Le thérapeute vous contactera directement par e-mail fourni dans le formulaire pour fixer l'heure du rendez-vous.<br>
+Une fois votre rendez-vous programmé et confirmé entre vous et le thérapeute, le paiement sera dû. Le paiement peut être effectué en toute sécurité via la page <a href="pricing-fr.html"><span>Prix et Paiement</span></a>. Si vous avez des questions sur la réservation, le paiement ou toute autre chose, n'hésitez pas à utiliser le bouton Contactez-nous ci-dessous pour envoyer votre demande. Le thérapeute vous répondra dans les plus brefs délais.</h3>
+
+
                 </div>
             </div>
-            <button id="myCFloat" class="btn" type="button" data-toggle="modal" data-target="#exampleModal">Contact Us</button>
+            <button id="myCFloat" class="btn" type="button" data-toggle="modal" data-target="#exampleModal">Nous contacter</button>
         </div>
     </div>
     <!-- END OF BOOKING Heading Section-->
@@ -121,23 +118,23 @@
     <form action="https://httppostsendmail20200614204433.azurewebsites.net/api/SendMail" method="post">
         <div class="contact_form_wrapper container">
             <div class="contact_form_header text-center">
-                <h2>Booking Request</h2>
+                <h2>Demande de rendez-vous</h2>
             </div>
             <div class="row">
                 <div class="col-sm-12">
                     <div class="contact_form">
                         <div class="row">
                             <div class="col-12 col-sm-6">
-                                <div class="form-group" data-toggle="tooltip" data-placement="top" title="Enter your Full Name if booking and/or paying for another person/patient.">
-                                    <label for="InputName1">Name</label>
-                                    <input type="name" class="form-control" id="InputName1" placeholder="Enter your name if different from Patient Name" name="name">
+                                <div class="form-group" data-toggle="tooltip" data-placement="top" title="Entrez votre nom complet si vous réservez et/ou payez pour une autre personne/patient.">
+                                    <label for="InputName1">Nom</label>
+                                    <input type="name" class="form-control" id="InputName1" placeholder="Entrez votre nom s'il est différent du nom du patient" name="name">
                                 </div>
                             </div>
                             <div class="col-12 col-sm-6">
-                                <div class="input-group-text" data-toggle="tooltip" data-placement="top" title="If you are booking for someone else, please enter their, Patient's, Full Name.">
+                                <div class="input-group-text" data-toggle="tooltip" data-placement="top" title="ISi vous réservez pour quelqu'un d'autre, veuillez saisir son nom/nom du patient.">
                                     <label for="InputPatientName1">Patient Name<span class="asteriskField">*</span></label>
 <!--                                    <div class="input-group-addon"><i class="fa fa-user"></i></div>-->
-                                    <input type="text" class="form-control" id="InputPatientName1" placeholder="Enter patient name" name="patientname" required maxlength="50">
+                                    <input type="text" class="form-control" id="InputPatientName1" placeholder="Entrez le nom du patient" name="patientname" required maxlength="50">
                                 </div>
                             </div>
 
@@ -146,46 +143,46 @@
                         </div>
                         <div class="row">
                             <div class="col-12 col-sm-6">
-                                <div class="form-group" data-toggle="tooltip" data-placement="top" title="Please select the treatment you are interested in booking.">
-                                    <label for="InterestedInSelect">Interested in Booking:</label>
+                                <div class="form-group" data-toggle="tooltip" data-placement="top" title="Veuillez sélectionner le traitement pour lequel vous souhaitez prendre rendez-vous">
+                                    <label for="InterestedInSelect">Sélectionnez le traitement qui vous intéresse</label>
                                     <select type="interestedIn" class="form-control" id="InterestedInSelect" placeholder="" name="interestedin" required>
-                                        <option>Select Option</option>
-                                        <option>Single Consultation</option>
-                                        <option>Therapy</option>
+                                        <option>Sélectionnez l'option</option>
+                                        <option>Consultation</option>
+                                        <option>Thérapie</option>
                                     </select>
                                 </div>
                             </div>
                             <div class="col-12 col-sm-6">
                                 <div class="form-group" data-toggle="tooltip" data-placement="top" title="Enter the patient's email address.">
-                                    <label for="InputEmail1">Email address<span class="asteriskField">*</span></label>
+                                    <label for="InputEmail1">Adresse e-mail<span class="asteriskField">*</span></label>
                                     <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="" name="email" required maxlength="50">
                                 </div>
                             </div>
                         </div>
                         <div class="row mt-2">
                             <div class="col-12 col-sm-6">
-                                <div class="form-group" data-toggle="tooltip" data-placement="top" title="Enter the patient's Country Name.">
-                                    <label for="InputCountry1">Country<span class="asteriskField">*</span></label>
+                                <div class="form-group" data-toggle="tooltip" data-placement="top" title="Entrez le nom du pays du patient.">
+                                    <label for="InputCountry1">Nom du pays<span class="asteriskField">*</span></label>
                                     <input type="country" class="form-control" id="InputCountry1" placeholder="" name="country" required>
                                 </div>
                             </div>
                             <div class="col-12 col-sm-6">
-                                <div class="form-group" data-toggle="tooltip" data-placement="top" title="Enter the patient's City Name.">
-                                    <label for="InputCity1">City</label>
+                                <div class="form-group" data-toggle="tooltip" data-placement="top" title="Saisissez le nom de ville du patient.">
+                                    <label for="InputCity1">Nom de Ville</label>
                                     <input type="city" class="form-control" id="InputCity1" placeholder="" name="city">
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-sm-12">
-                                <div class="form-group" data-toggle="tooltip" data-placement="top" title="If the patient has an established Diagnosis, please include it here. If not, then include the symptoms patient is experiencing.">
-                                    <label for="InputDiagnosisSympt1">Diagnosis or Symptoms<span class="asteriskField">*</span></label><textarea class="form-control" id="InputDiagnosisSympt1" placeholder="" name="diagnosisSympt" class="form-text text-muted" maxlength="6000" rows="7" required></textarea>
+                                <div class="form-group" data-toggle="tooltip" data-placement="top" title="Si le patient a un diagnostic médical établi, veuillez l'inclure ici. Sinon, décrivez les symptômes ressentis par le patient.">
+                                    <label for="InputDiagnosisSympt1">Diagnostic ou Symptômes<span class="asteriskField">*</span></label><textarea class="form-control" id="InputDiagnosisSympt1" placeholder="" name="diagnosisSympt" class="form-text text-muted" maxlength="6000" rows="7" required></textarea>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-sm-12">
-                                <div class="form-group" data-toggle="tooltip" data-placement="top" title="If you have any other questions and/or comments please include them here.">
+                                <div class="form-group" data-toggle="tooltip" data-placement="top" title="Si vous avez d'autres questions et/ou commentaires, veuillez les inclure ici.">
                                     <label for="InputMessage1">Message</label>
                                     <textarea class="form-control" id="InputMessage1" placeholder="" name="message" class="form-text text-muted" maxlength="6000" rows="7"></textarea>
                                 </div>
@@ -193,7 +190,7 @@
                         </div>
                         <div class="row text-center">
                             <div class="col-sm-12 col-sm-12-offset-2 text-center">
-                                                                <button type="submit" class="btn btn-primary">Submit</button>
+                                                                <button type="submit" class="btn btn-primary">Soumettre</button>
 <!--                                <input type="submit" name="submit" id="submit" value="Submit" class="btn btn-info pull-right">-->
                             </div>
                         </div>
@@ -219,53 +216,55 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Contact Us</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <h5 class="modal-title" id="exampleModalLabel">Nous contacter</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fermer">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
                     <form action="https://httppostsendmail20200614204433.azurewebsites.net/api/SendMail" method="post">
                         <p>
-                            If you have a question or quiry that is not adddressed in the <a href="FAQ.html"><span>FAQ</span></a> section use the form below and I will get back to you as soon as I can.
+                            Si vous avez une question qui n'est pas abordée dans ces pages et dans la section <a href="FAQ.html"><span>FAQ</span></a>, veuillez utiliser le formulaire ci-dessous pour envoyer votre requête et je vous répondrai dès que possible.
+
                         </p>
-                        <div class="form-group">
-                            <label for="recipient-name" class="col-form-label">Full Name:</label>
-                            <input type="name" class="form-control" id="InputName1" name="name" required maxlength="50">
+                            <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">Nom Complet:<span class="asteriskField">*</span></label>
+                                <input type="name" class="form-control" id="InputName1" name="name" required maxlength="50">
+                            </div>
+                            <div class="form-group">
+                                <label for="InputEmail1" class="col-form-label">Votre adresse email:<span class="asteriskField">*</span></label>
+                                <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="" name="email" required maxlength="50">
+                            </div>
+                            <div class="form-group">
+                                <label for="message-text" class="col-form-label">Message:<span class="asteriskField">*</span></label>
+                                <textarea class="form-control" id="message-text" placeholder="Votre message ici" maxlength="6000" rows="7" required></textarea>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+                                <input type="submit" name="submit" id="submit" value="Soumettre" class="btn btn-info pull-right">
+                            </div>
+                        </form>
+                        <div id="success_message" style="width:100%; height:100%; display:none; ">
+                           <h3>Envoyé votre message avec succès!</h3>
                         </div>
-                        <div class="form-group">
-                            <label for="InputEmail1" class="col-form-label">Your Email Address:</label>
-                            <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="" name="email" required maxlength="50">
+                        <div id="error_message" style="width:100%; height:100%; display:none; ">
+                            <h3>Erreur</h3>
+                            Désolé, une erreur s'est produite lors de l'envoi de votre formulaire.
                         </div>
-                        <div class="form-group">
-                            <label for="message-text" class="col-form-label">Message:</label>
-                            <textarea class="form-control" id="message-text" placeholder="Your Message Here" maxlength="6000" rows="7" required></textarea>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                            <input type="submit" name="submit" id="submit" value="Submit" class="btn btn-info pull-right">
-                        </div>
-                    </form>
-                    <div id="success_message" style="width:100%; height:100%; display:none; ">
-                        <h3>Sent your message successfully!</h3>
-                    </div>
-                    <div id="error_message" style="width:100%; height:100%; display:none; ">
-                        <h3>Error</h3>
-                        Sorry there was an error sending your form.
                     </div>
                 </div>
             </div>
         </div>
-    </div>
     <!-- END of CONTACT US FORM -->
 
 
-    <!-- START OF FOOTER ------------------------->
+
+   <!-- START OF FOOTER ------------------------->
     <footer id="footer" role="contentinfo">
         <div class="container">
             <div class="row row-bottom-padded-sm">
                 <div class="col-md-12">
-                    <p class="copyright text-center">&copy; 2020 Without MS Therapy <a href="index.html">Home</a>. All Rights Reserved. <br> Web Development by <a href="http://just-begin.com" target="_blank">Just Begin</a> | Design by <a href="https://www.linkedin.com/in/nada-nikolic-nadagraph" target="_blank">NadaGraph</a> </p>
+                    <p class="copyright text-center">&copy; © 2020 sans thérapie MS  <a href="index-fr.html">Accueil</a> Tous les droits sont réservés. <br>Développement Web par <a href="http://just-begin.com" target="_blank">Just Begin</a> | Concu par   <a href="https://www.linkedin.com/in/nada-nikolic-nadagraph" target="_blank">NadaGraph</a> </p>
                 </div>
             </div>
             <div class="row">

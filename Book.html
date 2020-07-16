@@ -118,6 +118,7 @@
 
 
     <!-- BEGINNING OF BOOKING FORM-->
+
     <form action="https://httppostsendmail20200614204433.azurewebsites.net/api/SendMail" method="post">
         <div class="contact_form_wrapper container">
             <div class="contact_form_header text-center">
@@ -206,13 +207,48 @@
                             Sorry there was an error sending your form.
                         </div>
 -->
+
                     </div>
                 </div>
             </div>
 
         </div>
     </form>
+
+
     <!-- END OF CONTACT and BOOKING -->
+
+    <!-- BEGIN MESSAGES
+    <style>
+	.bs-example{
+    	margin: 20px;
+    }
+</style>
+
+<div class="bs-example">
+    <!-- Success Alert
+    <div class="alert alert-success alert-dismissible fade show">
+        <strong>Success!</strong> Your message has been sent successfully.
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+    </div>
+    <!-- Error Alert
+    <div class="alert alert-danger alert-dismissible fade show">
+        <strong>Error!</strong> A problem has been occurred while submitting your data.
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+    </div>
+    <!-- Warning Alert
+    <div class="alert alert-warning alert-dismissible fade show">
+        <strong>Warning!</strong> There was a problem with your network connection.
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+    </div>
+    <!-- Info Alert
+    <div class="alert alert-info alert-dismissible fade show">
+        <strong>Info!</strong> Please read the comments carefully.
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+    </div>
+</div>
+    <!-- END MESSAGES -->
+
 
     <!-- Beginning of CONTACT US FORM -->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -227,18 +263,18 @@
                 <div class="modal-body">
                     <form action="https://httppostsendmail20200614204433.azurewebsites.net/api/SendMail" method="post">
                         <p>
-                            If you have a question or quiry that is not adddressed in the <a href="FAQ.html"><span>FAQ</span></a> section use the form below and I will get back to you as soon as I can.
+                            If you have a question that is not adddressed in these pages or in the <a href="FAQ.html"><span>FAQ</span></a> section, please use the form below to send your query and I will get back to you promptly.
                         </p>
                         <div class="form-group">
-                            <label for="recipient-name" class="col-form-label">Full Name:</label>
+                            <label for="recipient-name" class="col-form-label">Full Name:<span class="asteriskField">*</span></label>
                             <input type="name" class="form-control" id="InputName1" name="name" required maxlength="50">
                         </div>
                         <div class="form-group">
-                            <label for="InputEmail1" class="col-form-label">Your Email Address:</label>
+                            <label for="InputEmail1" class="col-form-label">Your Email Address:<span class="asteriskField">*</span></label>
                             <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="" name="email" required maxlength="50">
                         </div>
                         <div class="form-group">
-                            <label for="message-text" class="col-form-label">Message:</label>
+                            <label for="message-text" class="col-form-label">Message:<span class="asteriskField">*</span></label>
                             <textarea class="form-control" id="message-text" placeholder="Your Message Here" maxlength="6000" rows="7" required></textarea>
                         </div>
                         <div class="modal-footer">

@@ -65,22 +65,24 @@
             <!-- <div class="row"> -->
             <nav class="navbar navbar-default" background="#4f95bc">
                 <div class="navbar-header">
-                             <button id="cntctBtn" class="btn" type="button" data-toggle="modal" data-target="#exampleModal">Contact Us</button>
+                             <button id="cntctBtn" class="btn" type="button" data-toggle="modal" data-target="#exampleModal">Nous contacter</button>
                     <!-- Mobile Toggle Menu Button -->
                     <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <div class="d-flex justify-content-around">
                         <h4 class="nav navbar-nav">
-            <li class="active"><a href="index.html" data-nav-section="home"><span>Home</span></a></li>
-                            <li><a href="index.html" data-nav-section="about"><span>About Me</span></a></li>
-                            <li><a href="MSCauses.html"><span>MS Causes, Symptoms and Consequences</span></a></li>
-                            <li><a href="index.html" data-nav-section="features"><span>Therapy</span></a></li>
-                            <li><a href="mystory.html"><span>Testimony</span></a></li>
-                            <li><a href="pricing.html"><span>Pricing</span></a></li>
-                          <li><a href="Book.html"><span>Book Now</span></a></li>
+            <li class="active"><a href="index-fr.html" data-nav-section="home"><span>Accueil</span></a></li>
+                            <li><a href="index-fr.html" data-nav-section="about"><span>Rencontrez le thérapeute</span></a></li>
+                            <li><a href="index-fr.html" data-nav-section="features"><span>À propos de la thérapie</span></a></li>
+                            <li><a href="Book-fr.html"><span>Reserve maintenant</span></a></li>
+
+                             <li><a href="pricing-fr.html"><span>Prix et paiement</span></a></li>
+                             <li><a href="MSCauses-fr.html"><span>Causes, symptômes et conséquences de la SEP</span></a></li>
+                            <li><a href="mystory-fr.html"><span>Témoignage</span></a></li>
                             <li><a href="FAQ.html"><span>FAQ</span></a></li>
-                           <li><a href="index-sr.html"><img src="images/srb.png"><span>Srb</span></a></li>
+                            <li><a href="index-sr.html"><img src="images/srb.png"><span>Srb</span></a></li>
+                            <li><a href="index.html"><img src="images/eng.png"><span>Eng</span></a></li>
 
                         </h4>
                     </div>
@@ -318,45 +320,45 @@
         </div>
     </div>
     <!-- END OF FAQ-->
+<!-- Beginning of CONTACT US FORM -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Nous contacter</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fermer">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="https://httppostsendmail20200614204433.azurewebsites.net/api/SendMail" method="post">
+                        <p>
+                            Si vous avez une question qui n'est pas abordée dans ces pages et dans la section <a href="FAQ.html"><span>FAQ</span></a>, veuillez utiliser le formulaire ci-dessous pour envoyer votre requête et je vous répondrai dès que possible.
 
- <!-- Beginning of CONTACT US FORM -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Contact Us</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <form action="https://httppostsendmail20200614204433.azurewebsites.net/api/SendMail" method="post">
-                           <p>
-                                If you have a question or quiry that is not adddressed in the <a>href="FAQ.html"</a>  section use the form below and I will get back to you as soon as I can.
-                            </p>
+                        </p>
                             <div class="form-group">
-                                <label for="recipient-name" class="col-form-label">Full Name:</label>
+                                <label for="recipient-name" class="col-form-label">Nom Complet:<span class="asteriskField">*</span></label>
                                 <input type="name" class="form-control" id="InputName1" name="name" required maxlength="50">
                             </div>
                             <div class="form-group">
-                                <label for="InputEmail1" class="col-form-label">Your Email Address:</label>
+                                <label for="InputEmail1" class="col-form-label">Votre adresse email:<span class="asteriskField">*</span></label>
                                 <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="" name="email" required maxlength="50">
                             </div>
                             <div class="form-group">
-                                <label for="message-text" class="col-form-label">Message:</label>
-                                <textarea class="form-control" id="message-text" placeholder="Your Message Here" maxlength="6000" rows="7" required></textarea>
+                                <label for="message-text" class="col-form-label">Message:<span class="asteriskField">*</span></label>
+                                <textarea class="form-control" id="message-text" placeholder="Votre message ici" maxlength="6000" rows="7" required></textarea>
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                <input type="submit" name="submit" id="submit" value="Submit" class="btn btn-info pull-right">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+                                <input type="submit" name="submit" id="submit" value="Soumettre" class="btn btn-info pull-right">
                             </div>
                         </form>
                         <div id="success_message" style="width:100%; height:100%; display:none; ">
-                            <h3>Sent your message successfully!</h3>
+                           <h3>Envoyé votre message avec succès!</h3>
                         </div>
                         <div id="error_message" style="width:100%; height:100%; display:none; ">
-                            <h3>Error</h3>
-                            Sorry there was an error sending your form.
+                            <h3>Erreur</h3>
+                            Désolé, une erreur s'est produite lors de l'envoi de votre formulaire.
                         </div>
                     </div>
                 </div>
@@ -364,12 +366,14 @@
         </div>
     <!-- END of CONTACT US FORM -->
 
+
+
     <!-- START OF FOOTER ------------------------->
     <footer id="footer" role="contentinfo">
         <div class="container">
             <div class="row row-bottom-padded-sm">
                 <div class="col-md-12">
-                    <p class="copyright text-center">&copy; 2020 Without MS Therapy <a href="index.html">Home</a>. All Rights Reserved. <br> Web Development by <a href="http://just-begin.com" target="_blank">Just Begin</a> | Design by <a href="https://www.linkedin.com/in/nada-nikolic-nadagraph" target="_blank">NadaGraph</a> </p>
+                    <p class="copyright text-center">&copy; © 2020 sans thérapie MS  <a href="index-fr.html">Accueil</a> Tous les droits sont réservés. <br>Développement Web par <a href="http://just-begin.com" target="_blank">Just Begin</a> | Concu par   <a href="https://www.linkedin.com/in/nada-nikolic-nadagraph" target="_blank">NadaGraph</a> </p>
                 </div>
             </div>
             <div class="row">

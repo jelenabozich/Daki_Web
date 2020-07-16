@@ -54,7 +54,7 @@
 
 <body>
     <!-- Beginning of NAVBAR -->
-    <header role="banner" id="fh5co-header" style="background: #4f95bc">
+    <header role="banner" id="fh5co-header">
         <div class="container">
             <!-- <div class="row"> -->
             <nav class="navbar navbar-default">
@@ -120,24 +120,18 @@
                             <div class="col-12 col-sm-6">
 
                                 <div class="input-group-text" data-toggle="tooltip" data-placement="top" title="Ako zakazujete ili placate za drugu osobu, unesite Vase ime.">
-
-
-
-                                    <label for="InputPatientName1">Ime Pacijenta</label>
-
-                                    <input type="text" class="form-control" id="InputPatientName1" placeholder="" name="patientname">
-
-
+                                    <label for="InputPatientName1">Ime Pacijenta<span class="asteriskField">*</span></label>
+                                    <input type="text" class="form-control" id="InputPatientName1" placeholder="Unesite ime pacijenta" name="patientname" required maxlength="50">
+                                </div>
                                 </div>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col-12 col-sm-6">
-
                                 <div class="form-group" data-toggle="tooltip" data-placement="top" title="Please select the treatment you are interested in booking.">
-                                    <label for="InterestedInSelect">Želim da Zakazem:</label>
-                                    <select type="interestedIn" class="form-control" id="InterestedInSelect" placeholder="" name="interestedin">
+                                    <label for="InterestedInSelect">Želim da Zakazem:<span class="asteriskField">*</span></label>
+                                    <select type="interestedIn" class="form-control" id="InterestedInSelect" placeholder="" name="interestedin" required>
                                          <option>Izaberite Opciju</option>
                                         <option>Jednu Konsultaciju</option>
                                         <option>Terapiju</option>
@@ -147,8 +141,8 @@
                             </div>
                             <div class="col-12 col-sm-6">
                                 <div class="form-group" data-toggle="tooltip" data-placement="top" title="Enter the patient's email address.">
-                                    <label for="InputEmail1">Imail-adresa</label>
-                                    <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="" name="email">
+                                    <label for="InputEmail1">Imail-adresa<span class="asteriskField">*</span></label>
+                                    <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="" name="email" required maxlength="50">
 
                                 </div>
                             </div>
@@ -156,8 +150,8 @@
                         <div class="row mt-2">
                             <div class="col-12 col-sm-6">
                                 <div class="form-group" data-toggle="tooltip" data-placement="top" title="Enter the patient's Country Name.">
-                                    <label for="InputCountry1">Zemlja</label>
-                                    <input type="country" class="form-control" id="InputCountry1" placeholder="" name="country">
+                                    <label for="InputCountry1">Zemlja<span class="asteriskField">*</span></label>
+                                    <input type="country" class="form-control" id="InputCountry1" placeholder="" name="country" required>
                                 </div>
                             </div>
                             <div class="col-12 col-sm-6">
@@ -170,7 +164,7 @@
                         <div class="row">
                             <div class="col-sm-12">
                                 <div class="form-group" data-toggle="tooltip" data-placement="top" title="If the patient has an established Diagnosis, please include it here. If not, then include the symptoms patient is experiencing.">
-                                    <label for="InputDiagnosisSympt1">Dijagnoza ili Simptomi</label><textarea class="form-control" id="InputDiagnosisSympt1" placeholder="" name="diagnosisSympt" class="form-text text-muted"></textarea>
+                                    <label for="InputDiagnosisSympt1">Dijagnoza ili Simptomi<span class="asteriskField">*</span></label><textarea class="form-control" id="InputDiagnosisSympt1" placeholder="" name="diagnosisSympt" class="form-text text-muted" maxlength="6000" rows="7" required></textarea>
                                 </div>
                             </div>
                         </div>
@@ -191,7 +185,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+
     </form>
     <!-- END OF CONTACT and BOOKING -->
 
@@ -210,16 +204,16 @@
 
                     <form action="https://httppostsendmail20200614204433.azurewebsites.net/api/SendMail" method="post">
                         <div class="form-group">
-                            <label for="recipient-name" class="col-form-label">Ime i Prezime:</label>
-                            <input type="name" class="form-control" id="InputName1" name="name">
+                            <label for="recipient-name" class="col-form-label">Ime i Prezime:<span class="asteriskField">*</span></label>
+                            <input type="name" class="form-control" id="InputName1" name="name" required maxlength="50">
                         </div>
                         <div class="form-group">
-                            <label for="InputEmail1" class="col-form-label">Imejl-adresa:</label>
-                            <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="" name="email">
+                            <label for="InputEmail1" class="col-form-label">Imejl-adresa:<span class="asteriskField">*</span></label>
+                            <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="" name="email" required maxlength="50">
                         </div>
                         <div class="form-group">
-                            <label for="message-text" class="col-form-label">Poruka:</label>
-                            <textarea class="form-control" id="message-text"></textarea>
+                            <label for="message-text" class="col-form-label">Poruka:<span class="asteriskField">*</span></label>
+                            <textarea class="form-control" id="message-text" maxlength="6000" rows="7" required></textarea>
                         </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-default" data-dismiss="modal">Zatvori</button>
