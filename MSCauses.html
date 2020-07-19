@@ -28,10 +28,11 @@
     <meta name="twitter:image" content="" />
     <meta name="twitter:url" content="" />
     <meta name="twitter:card" content="" />
-    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no" />
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <link rel="shortcut icon" href="favicon.ico">
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
+     <link href="https://fonts.googleapis.com/css?family=Special+Elite&display=swap" rel="stylesheet">
     <!-- Animate.css -->
     <link rel="stylesheet" href="css/animate.css">
     <!-- Icomoon Icon Fonts-->
@@ -56,44 +57,109 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css">
     <!-- JQuery for Contact Us form error mesages -->
     <script src="js/form.js"></script>
+    <!--<script>
+    window.onscroll = function() {myFunction()};
+
+    var navlist = document.getElementById("navlist");
+    var sticky = navlist.offsetTop;
+
+    /* Function to stick the nav bar */
+    function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            navlist.classList.add("sticky")
+        }
+        else {
+            navlist.classList.remove("sticky");
+        }
+    }
+</script> -->
+    <style>
+body {margin:0;}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+    opacity: 0
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px; /* Used in this example to enable scrolling */
+}
+</style>
 </head>
+
+
+
+
 
 <body>
     <!-- Beginning of NAVBAR -->
-    <header role="banner" id="fh5co-header" style="background: #4f95bc">
-        <div class="container">
-            <!-- <div class="row"> -->
-            <nav class="navbar navbar-default">
-                <div class="navbar-header">
+   <div class="navbar">
+
+
                              <button id="cntctBtn" class="btn" type="button" data-toggle="modal" data-target="#exampleModal">Contact Us</button>
-                    <!-- Mobile Toggle Menu Button -->
-                    <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
-                </div>
-                <div id="navbar" class="navbar-collapse collapse">
-                    <div class="d-flex justify-content-around">
-                        <h4 class="nav navbar-nav" style="color: fff; opacity: 0.5">
-                            <li><a href="index.html" data-nav-section="home"><span>Home</span></a></li>
-                            <li><a href="index.html" data-nav-section="about"><span>About Me</span></a></li>
-                            <li class="active"><a href="MSCauses.html"><span>MS Causes, Symptoms and Consequences</span></a></li>
-                            <li><a href="index.html" data-nav-section="features"><span>Therapy</span></a></li>
-                            <li><a href="mystory.html"><span>Testimony</span></a></li>
-                            <li><a href="pricing.html"><span>Pricing</span></a></li>
-                          <li><a href="Book.html"><span>Book Now</span></a></li>
-                            <li><a href="FAQ.html"><span>FAQ</span></a></li>
-                          <li><a href="index-sr.html"><img src="images/srb.png"><span>Srb</span></a></li>
+                            <!-- Mobile Toggle Menu Button -->
+                            <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i>Burger</i></a>
+
+
+                        <h4>
+                          <a href="index.html" data-nav-section="home"><span>Home</span></a>
+                          <a href="index.html" data-nav-section="about"><span>About Me</span></a>
+                            <li class="active"><a href="MSCauses.html"><span>MS Causes, Symptoms and Consequences</span></a>
+                          <a href="index.html" data-nav-section="features"><span>Therapy</span></a>
+                          <a href="mystory.html"><span>Testimony</span></a>
+                          <a href="pricing.html"><span>Pricing</span></a>
+                        <a href="Book.html"><span>Book Now</span></a>
+                          <a href="FAQ.html"><span>FAQ</span></a>
+                        <a href="index-sr.html"><img src="images/srb.png"><span>Srb</span></a>
 
                         </h4>
                     </div>
-                </div>
-            </nav>
-        </div>
-    </header>
+
+
     <!-- END of NAVBAR -->
 
+<!-- livezilla.net PLACE WHERE YOU WANT TO SHOW GRAPHIC BUTTON -->
+<a href="javascript:void(window.open('//www.withoutms.com/livezilla/chat.php?hg=&ptl=en&hcgs=MQ__&htgs=MQ__&nct=MQ__&hfk=MQ__&epc=I2FkYWRhZA__&esc=IzE1M2U1NQ__','','width=400,height=600,left=0,top=0,resizable=yes,menubar=no,location=no,status=yes,scrollbars=yes'))" class="lz_cbl"><img src="//www.withoutms.com/livezilla/image.php?id=1&type=inlay?hg=&ptl=en&hcgs=MQ__&htgs=MQ__&nct=MQ__&hfk=MQ__&epc=I2FkYWRhZA__&esc=IzE1M2U1NQ__" width="86" height="86" style="border:0;" alt="LiveZilla Live Chat Software"></a>
+<!-- livezilla.net PLACE WHERE YOU WANT TO SHOW GRAPHIC BUTTON -->
 
+<!-- livezilla.net PLACE SOMEWHERE IN BODY -->
+<!-- PASS THRU DATA OBJECT -->
+<script type="text/javascript">
+var lz_data = {overwrite:false,language:'en'};
+</script>
+<!-- PASS THRU DATA OBJECT -->
+
+<div id="lvztr_368" style="display:none"></div>
+
+<script id="lz_r_scr_87c0a904d6f959e5ecbd0bdaa29d8be9" type="text/javascript" defer>lz_ovlel = [{type:"wm",icon:"commenting"},{type:"chat",icon:"comments",counter:true},{type:"ticket",icon:"envelope"}];lz_ovlel_rat = 1.2;lz_ovlel_ri = 'envelope';lz_code_id="87c0a904d6f959e5ecbd0bdaa29d8be9";var script = document.createElement("script");script.async=true;script.type="text/javascript";var src = "//www.withoutms.com/livezilla/server.php?rqst=track&output=jcrpt&hg=&hcgs=MQ__&htgs=MQ__&hfk=MQ__&cboo=MQ__&fbpos=10&fbw=176&fbh=176&fbml=30&fbmt=30&fbmr=40&fbmb=30&fbshx=NQ__&fbshy=NQ__&fbshc=IzY5Njk2OQ__&ovlv=djI_&ovlc=MQ__&esc=IzRmOTViYw__&epc=IzE1M2U1NQ__&ovlts=MA__&hfk=MQ__&oets=MQ__&ovlapo=MQ__&nse="+Math.random();script.src=src;document.getElementById('lvztr_368').appendChild(script);</script>
+
+<div style="display:none;"><a href="javascript:void(window.open('//www.withoutms.com/livezilla/chat.php?hg=&ptl=en&hcgs=MQ__&htgs=MQ__&nct=MQ__&hfk=MQ__&epc=I2FkYWRhZA__&esc=IzE1M2U1NQ__','','width=400,height=600,left=0,top=0,resizable=yes,menubar=no,location=no,status=yes,scrollbars=yes'))" class="lz_fl"><img id="chat_button_image" src="//www.withoutms.com/livezilla/image.php?id=5&type=overlay" width="176" height="176" style="border:0px;" alt="LiveZilla Live Chat Software"></a></div>
+<!-- livezilla.net PLACE SOMEWHERE IN BODY -->
 
 
     <!-- Beginning of MS CAUSES and SYMPTOMS -->
+    <div class="main">
     <div id="fh5co-our-services" data-section="services">
         <div class="container">
             <div class="row row-bottom-padded-sm">
@@ -121,6 +187,7 @@
             </div>
         </div>
     </div>
+        </div>
     <!-- END of MS CAUSES and SYMPTOMS -->
 
 
@@ -182,9 +249,9 @@
             <div class="row">
                 <div class="col-md-12 text-center">
                     <ul class="social social-circle">
-                        <li><a href="https://www.facebook.com/withoutms.therapy"><i class="icon-facebook"></i></a></li>
-                        <li><a href="https://www.youtube.com/channel/UC31B_re2yWbHXIpONjTKxmQ"><i class="icon-youtube"></i></a></li>
-                        <li><a href="https://www.instagram.com/without.ms/"><i class="icon-instagram"></i></a></li>
+                      <a href="https://www.facebook.com/withoutms.therapy"><i class="icon-facebook"></i></a>
+                      <a href="https://www.youtube.com/channel/UC31B_re2yWbHXIpONjTKxmQ"><i class="icon-youtube"></i></a>
+                      <a href="https://www.instagram.com/without.ms/"><i class="icon-instagram"></i></a>
                     </ul>
                 </div>
             </div>
