@@ -161,6 +161,46 @@ h6 {
         -ms-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
         box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
     }
+#navbar-otherpages {
+    background-color: #153e55;
+
+}
+    .navbar-otherpages {
+    background-color: #153e55;
+
+}
+
+/* change the brand and text color */
+.navbar-otherpages .navbar-brand,
+.navbar-otherpages .navbar-text {
+    color: rgba(255,255,255,.8);
+}
+
+/* change the link color */
+.navbar-otherpages .navbar-nav .nav-link {
+    color: rgba(255,255,255,.5);
+}
+
+/* change the color of active or hovered links */
+.navbar-otherpages .nav-item.active .nav-link,
+.navbar-otherpages .nav-item:hover .nav-link {
+    color: #ffffff;
+}
+
+/* for dropdown only - change the color of droodown */
+.navbar-otherpages .dropdown-menu {
+    background-color: #153e55;
+}
+.navbar-otherpages .dropdown-item {
+    color: #ffffff;
+    opacity: 0.8;
+}
+.navbar-otherpages .dropdown-item:hover,
+.navbar-otherpages .dropdown-item:focus {
+    color: #ffffff;
+    background-color: #153e55;
+}
+
 
     #fh5co-header .navbar-brand {
         color: #5585b5 !important;
