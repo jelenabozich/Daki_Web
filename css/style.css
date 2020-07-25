@@ -265,7 +265,7 @@ h6 {
         color: #5585b5 !important;
         color: #fff !important;
     }
-/*INDEX Navbar when u SCROLL DOWN*/
+
     #fh5co-header #navbar li a {
         color: rgba(0, 0, 0, 0.5) !important;
         -webkit-transition: 0.3s;
@@ -274,45 +274,47 @@ h6 {
         -webkit-transform: translate3d(0, 0, 0);
 transform : translate3d(0, 0, 0);
     }
-/*INDEX Navbar when u SCROLL DOWN*/
+
+
     #fh5co-header #navbar li a:hover {
         color: #5585b5 !important;
         color: #777777 !important;
     }
-/*INDEX Navbar when u SCROLL DOWN*/
+
     #fh5co-header #navbar li a span:before {
         background: transparent !important;
     }
-/*INDEX Navbar when u SCROLL DOWN*/
+
     #fh5co-header #navbar li.active a {
         background: transparent;
         background: none;
         color: #5585b5 !important;
     }
-/*INDEX Navbar when u SCROLL DOWN*/
+
     #fh5co-header #navbar li.active a span:before {
         visibility: visible;
         -webkit-transform: scaleX(1);
         transform: scaleX(1);
     }
-/*INDEX Navbar CAROUSELL*/
+}
+
 #fh5co-header .navbar {
     padding-bottom: 0;
     margin-bottom: 0;
 }
-/*INDEX Navbar CAROUSELL*/
+
 #fh5co-header #navbar li a {
     font-family: "Source Sans Pro", Arial, sans-serif;
     color: rgba(255, 255, 255, 0.5);
     position: relative;
 }
-/*INDEX Navbar CAROUSELL*/
+
 #fh5co-header #navbar li a span {
     position: relative;
     display: block;
     padding-bottom: 2px;
 }
-/*INDEX Navbar CAROUSELL*/
+
 #fh5co-header #navbar li a span:before {
     content: "";
     position: absolute;
@@ -333,11 +335,11 @@ transform : translate3d(0, 0, 0);
     -o-transition: all 0.3s ease-in-out 0s;
     transition: all 0.3s ease-in-out 0s;
 }
-/*INDEX Navbar CAROUSELL*/
+
 #fh5co-header #navbar li a:hover {
     color: #fff;
 }
-/*INDEX Navbar CAROUSELL*/
+
 #fh5co-header #navbar li a:hover span:before {
     visibility: visible;
     -webkit-transform: scaleX(1);
@@ -346,13 +348,16 @@ transform : translate3d(0, 0, 0);
     -o-transform: scaleX(1);
     transform: scaleX(1);
 }
-/*INDEX Navbar CAROUSELL*/
+
 #fh5co-header #navbar li.active a {
     background: transparent;
     background: none;
     color: #fff;
 }
-/*INDEX Navbar CAROUSELL*/
+
+
+
+
 #fh5co-header #navbar li.active a span:before {
     visibility: visible;
     -webkit-transform: scaleX(1);
@@ -378,7 +383,7 @@ transform : translate3d(0, 0, 0);
     margin-top: 0px;
     top: 0;
 }
-/*INDEX Navbar CAROUSELL*/
+
 #fh5co-header.navbar-fixed-top .navbar-brand {
     color: #5585b5;
 }
