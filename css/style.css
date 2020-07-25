@@ -153,7 +153,16 @@ h6 {
     border: 2px solid #fff !important;
 }
 
-
+<style>
+.align-items-center {
+  -ms-flex-align: center!important;
+  align-items: center!important;
+}
+.d-flex {
+  display: -ms-flexbox!important;
+  display: flex!important;
+}
+</style>
 /*Floating Back-To-Top Button
 #myCFloat {
     position: fixed;
